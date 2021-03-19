@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+ {% block content %}
+
+    <div id="update" class="card">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <p>
+                {{ form.as_table }}
+                <button type="submit">Save</button>
+            </p>
+        </form>
+    </div>
+ 
+ {% endblock content %}
+

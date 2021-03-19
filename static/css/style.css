@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#navbar {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+#newtask {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+#newtask p{
+    margin-top: 5px;
+}
+
+
+#text {
+    border: 0px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#newtask button {
+    border: 0px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    background: white;
+}
+
+#newtask button:hover, #update button:hover {
+    background: black;
+    color: white;   
+}
+
+.task {
+    width: 280px;
+    margin: auto;
+    margin-top: 0px;
+    /* display: grid;
+    grid-template-columns: 70% 30%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.task p:first-child {
+    width: 200px;
+}
+
+#update {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+}
+
+#updateText {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+#update button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background: white;
+}
+
+.task p:nth-child(2) a:first-child {
+    color: blue;
+    text-decoration: none;
+}
+
+.task p:nth-child(2) a:nth-child(2) {
+    color: red;
+    text-decoration: none;
+}

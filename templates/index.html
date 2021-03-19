@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+ {% block content %}
+     <div id="newtask" class="card">
+        <p>New Task</p>
+        <form action="" method="POST">
+        {% csrf_token %}
+            <p>
+                {{ form.as_table }}
+                <button type="submit">Add</button>
+            </p>
+        </form>
+    </div>
+
+    <div id="tasks">
+        {% for task in tasks %}
+            <div class="card task">
+                <p>{{ task }}</p>
+                <p><a href="{% url 'todo:updatetask' task.id %}">edit </a> . <a href="{% url 'todo:deletetask' task.id %}"> delete</a></p>
+            </div>
+        {% endfor %}
+
+    </div>
+
+ 
+ {% endblock content %}
+
+
